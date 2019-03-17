@@ -7,7 +7,7 @@
 * Ìá¹©ÁË¶Ô Web Ó¦ÓÃ¿ª·¢µÄÖ§³Ö
 * ½ÏºÃµÄ°²È«ĞÔºÍ½¡×³ĞÔ£¨Êı×é±ß½ç¼ì²â¡¢BytecodeĞ£Ñé£»Ç¿ÀàĞÍ»úÖÆ¡¢GC¡¢Òì³£´¦Àí¡¢°²È«¼ì²é»úÖÆ£©
 * È¥³ıÁË C++ ÖĞ½ÏÄÑµÄÍ·ÎÄ¼ş¡¢Ö¸Õë¡¢½á¹¹¡¢µ¥Ôª¡¢ÔËËã·ûÖØÔØ¡¢ĞéÄâ»ù´¡½á¹¹¡¢¶àÖØ¼Ì³ĞµÈ
-<br/>       
+<br/>
         
 ### 1.2 Java Óë C++ ÓĞÊ²Ã´ÒìÍ¬
 * Java Îª½âÊÍĞÍÓïÑÔ£¬C++ Îª±àÒëĞÍÓïÑÔ£¨±àÒëºÍÁ´½ÓºóÉú³É¿ÉÖ´ĞĞµÄ¶ş½øÖÆ´úÂë£©£¬JavaµÄÖ´ĞĞËÙ¶ÈÂıµ«ÄÜ¿çÆ½Ì¨
@@ -18,25 +18,25 @@
 * Java ÖĞ import »úÖÆ´úÌæÁË C++ µÄÔ¤´¦Àí¹¦ÄÜ£»Java ²»Ö§³ÖÔËËã·ûÖØÔØ£»Java ²»Ö§³Ö goto Óï¾ä£¬µ«ÆäÈÔÊÇ±£Áô×Ö£»Java ²»Ö§³ÖÇ¿ÖÆÀàĞÍ×ª»»£¬ĞèÒªÏÔÊ½µØÇ¿ÖÆÀàĞÍ×ª»»ÁË
 * Java ¾ßÓĞÆ½Ì¨ÎŞ¹ØĞÔ£¬¶ÔÃ¿ÖÖÊı¾İÀàĞÍ¶¼·ÖÅä¹Ì¶¨³¤¶È£¬Èç int Õ¼ 32 Î»
 * Java ÓĞºÜ¶à±ê×¼¿âºÍ¶Ô×¢ÊÍÎÄµµµÄÄÚ½¨Ö§³Ö javadoc
-<br/>       
-        
+<br/>
+                        
 ### 1.3 ÎªÊ²Ã´ĞèÒª```public static void main (String[] args)```Õâ¸ö·½·¨
 ÕâÊÇ Java ³ÌĞòµÄÈë¿Ú·½·¨£»
 * JVM ÔËĞĞÊ±Ê×ÏÈÕÒµ½ main() ÕâÒ»ÌØÊı·½·¨Ãû£»
 * public ÊÇÈ¨ÏŞĞŞÊÎ·û£¬±íÃ÷ÈÎºÎÀà»ò¶ÔÏó¶¼¿ÉÒÔ·ÃÎÊÕâ¸ö·½·¨£»
 * static ±íÃ÷ main() ·½·¨ÊÇÒ»¸ö¾²Ì¬·½·¨£¬¼´´æ´¢ÔÚ¾²Ì¬´æ´¢Çø£¬Ö±½Ó¿ÉÒÔÍ¨¹ıÀàÃû.main()Ö±½Ó·ÃÎÊ£»
 * args Îª¿ª·¢ÕßÔÚÃüÁîĞĞÌá¹©½»»¥ÊÖ¶Î¡£
-<br/>       
-        
+<br/>
+
 ÒıÉê£º
 1. ¿ÉÒÔÓÃ final¡¢synchronized À´ĞŞÊÎ main()£¬µ«²»ÄÜÓÃ abstract ³éÏóÀà¹Ø¼ü×ÖÀ´ĞŞÊÎ£¨Ã»ÓĞ·½·¨Ìå£©£»
 2. Ã¿¸öÀà¶¼¿ÉÒÔ¶¨Òå main() ·½·¨£¬µ«ÊÇÖ»ÓĞÓëÎÄ¼şÃûÏàÍ¬µÄÓÃ public ĞŞÊÎµÄÀàÖĞµÄ main() ·½·¨²ÅÄÜ×÷Îª³ÌĞòÈë¿Ú¡£
-<br/>       
+<br/>
         
 ### 1.4 ÈçºÎÔÚ mian() ·½·¨Ö´ĞĞÇ°Êä³öĞÅÏ¢
 ¾²Ì¬¿éÔÚÀà±»¼ÓÔØÊ±¾Í»á±»µ÷ÓÃ
 ```java
-public class com.ustc.test.Test{
+public class Test{
     static{ 
         System.out.println("hello 1"); // ÏÈÏÔÊ¾
     }
@@ -45,8 +45,8 @@ public class com.ustc.test.Test{
     }
 }
 ```
-<br/>   
-    
+<br/>
+        
 ### 1.5 Java ³ÌĞò³õÊ¼»¯Ë³Ğò
 1. ¾²Ì¬¿é
     * ¸¸Àà¾²Ì¬¿é>×ÓÀà¾²Ì¬¿é
@@ -58,12 +58,12 @@ public class com.ustc.test.Test{
     * ±äÁ¿>´úÂë¿é>º¯Êı
 5. ·Ç¾²Ì¬×ÓÀà
     * ±äÁ¿>´úÂë¿é>º¯Êı
-<br/>   
-    
+<br/> 
+        
 ### 1.6 Java ÖĞµÄ×÷ÓÃÓò
 ±äÁ¿µÄÀàĞÍ£º
 ```java
-class com.ustc.test.Person{
+class Person{
     String name;    // ³ÉÔ±±äÁ¿/ÊµÀı±äÁ¿
     static int age; // ¾²Ì¬±äÁ¿/Àà±äÁ¿
     public void study(){
@@ -75,12 +75,12 @@ class com.ustc.test.Person{
 private£¨µ±Ç°Àà£©¡¢default£¨+ Í¬Ò» package£©¡¢protected£¨+ ×ÓÀà£©¡¢public£¨+ ÆäËû package£©     
         
 ÄÚ²¿Àà£ºÀàÖĞµÄÀà£¬²Å¿ÉÒÔÓÉ private¡¢protected ĞŞÊÎ£»Ö»ÓĞ public¡¢abstract¡¢final ÄÜĞŞÊÎÍâ²¿Àà¡£
-<br/>   
-    
+<br/>
+        
 ### 1.7 Ò»¸ö Java ÎÄ¼şÖĞÊÇ·ñ¿ÉÒÔ¶¨Òå¶à¸öÀà
 * Ò»¸ö Java ÎÄ¼ş¿ÉÒÔ¶¨Òå¶à¸öÀà£¬µ«ÊÇ×î¶àÖ»ÄÜÓĞÒ»¸öÀà±» public ĞŞÊÎ£¬²¢ÇÒÕâ¸öÀàµÄÀàÃûÒªºÍÎÄ¼şÃûÏàÍ¬£¨Õâ±íÊ¾£¬Ã¿¸ö±àÒëµ¥Ôª¶¼ÓĞµ¥Ò»µÄ¹«¹²½Ó¿Ú£©¡£Ò²¿ÉÒÔÃ»ÓĞ public Àà¡£     
 * µ±ÓÃ javac Ö¸Áî±àÒë .java ÎÄ¼şÊ±£¬Ëü»á¸øÃ¿Ò»¸öÀàÉú³ÉÒ»¸ö¶ÔÓ¦µÄ .class ÎÄ¼ş¡£
-<br/>   
+<br/>
         
 ### 1.8 Ê²Ã´ÊÇ¹¹Ôìº¯Êı
 * ¹¹Ôìº¯Êı±ØĞëÓëÀàµÄÃû×ÖÏàÍ¬£¬²¢²»ÄÜÓĞ·µ»ØÖµ void ĞÍ
@@ -89,14 +89,14 @@ private£¨µ±Ç°Àà£©¡¢default£¨+ Í¬Ò» package£©¡¢protected£¨+ ×ÓÀà£©¡¢public£¨+ ÆäË
 * ¹¹Ôìº¯Êı²»ÄÜ±»¼Ì³Ğ£¬µ«ÊÇ¿ÉÒÔ±»ÖØÔØ
 * ×ÓÀà¿ÉÒÔÍ¨¹ı super À´ÏÔÊ½µØµ÷ÓÃ¸¸ÀàµÄ¹¹Ôìº¯Êı£¬µ±¸¸ÀàÃ»ÓĞÌá¹©ÎŞ²ÎµÄ¹¹Ôìº¯Êı£¬×ÓÀà±ØĞëÏÔÊ½µ÷ÓÃ¸¸ÀàµÄ¹¹Ôìº¯Êı
 * ¹¹Ôìº¯Êı×ÜÊÇ°éËæ new ²Ù×÷Ò»ÆğÓÉÏµÍ³µ÷ÓÃ£¬ÔÚ¶ÔÏóÊµÀı»¯Ê±Ö»ÔËĞĞÒ»´Î
-<br/>   
-    
+<br/>
+        
 ### 1.9 ÎªÊ²Ã´ÓĞĞ©½Ó¿ÚÃ»ÓĞÈÎºÎ·½·¨
 * ÎªÁË¿Ë·şµ¥¼Ì³ĞµÄÈ±µã£¬Java ÒıÈëÁË½Ó¿ÚµÄ¸ÅÄî¡£    
 * ½Ó¿ÚÖĞ³ÉÔ±µÄ×÷ÓÃÓòĞŞÊÎ·û¶¼ÊÇ public£¬³£Á¿ÖµÄ¬ÈÏÊ¹ÓÃ public static final ĞŞÊÎ¡£  
 * ½Ó¿ÚÊÇ³éÏó·½·¨¶¨ÒåµÄ¼¯ºÏ£¬Ö»°üº¬·½·¨µÄ¶¨Òå£¬Ã»ÓĞ·½·¨µÄÊµÏÖ¡£Ã»ÓĞÈÎºÎ·½·¨ÉùÃ÷µÄ½Ó¿Ú³ÆÎª±êÊ¶½Ó¿Ú¡£Ê¹ÓÃ instanceof À´ÅĞ¶ÏÊµÀı¶ÔÏóµÄÀàĞÍÊÇ·ñÊµÏÖÁËÒ»¸ö¸ø¶¨µÄ±êÊ¶½Ó¿Ú¡£
-<br/>   
-    
+<br/>
+        
 ### 1.10 clone ·½·¨µÄ×÷ÓÃ
 * Java Ã»ÓĞÃ÷È·Ìá¹©Ö¸ÕëµÄ¸ÅÄîºÍÓÃ·¨£¬¶øÊµÖÊÉÏÃ¿¸ö new Óï¾ä·µ»ØµÄ¶¼ÊÇÒ»¸öÖ¸ÕëµÄÒıÓÃ¡£  
 * Java ÔÚ´¦Àí»ù±¾Êı¾İÀàĞÍÊ±£¬¶¼ÊÇ²ÉÓÃ°´Öµ´«µİ£¬³ı´ËÖ®ÍâµÄÆäËûÀàĞÍ¶¼ÊÇ°´ÒıÓÃ´«µİ£¨¶ÔÏóÊ¹ÓÃ = Ò²ÊÇÒıÓÃ´«µİ£©¡£
@@ -109,7 +109,7 @@ private£¨µ±Ç°Àà£©¡¢default£¨+ Í¬Ò» package£©¡¢protected£¨+ ×ÓÀà£©¡¢public£¨+ ÆäË
 ~~~
 µ±**ÀàÖĞ°üº¬Ò»Ğ©¶ÔÏóÊ±**£¬¾ÍÒªÓÃµ½Éî¸´ÖÆ¡£ÔÚ¶Ô¶ÔÏóµ÷ÓÃ clone() ·½·¨Íê³É¸´ÖÆºó£¬½Ó×Å¶Ô¶ÔÏóÖĞµÄ·Ç»ù±¾ÀàĞÍµÄÊôĞÔÒ²µ÷ÓÃ clone() ·½·¨¡£Èç£ºo.getDate = (Date)this.getDate().clone();
 <br/>
-
+        
 ### 1.11 ·´Éä»úÖÆ
 ¹¦ÄÜ£º     
 * ÔÚÔËĞĞÊ±ÅĞ¶ÏÈÎÒâÒ»¸ö¶ÔÏóËùÊôµÄÀà£»
@@ -118,9 +118,9 @@ private£¨µ±Ç°Àà£©¡¢default£¨+ Í¬Ò» package£©¡¢protected£¨+ ×ÓÀà£©¡¢public£¨+ ÆäË
 * ÔÚÔËĞĞÊ±µ÷ÓÃÈÎÒâÒ»¸ö¶ÔÏóµÄ³ÉÔ±±äÁ¿ºÍ·½·¨£»
 * Éú³É¶¯Ì¬´úÀí¡£
 ```java
-public class com.ustc.test.Test{
+public class Test{
     // Í¨¹ı·´Éä»úÖÆ´´½¨¶ÔÏó
-    public void com.ustc.test.Test() throws IllegalAccessException, InstantiationException, NoSuchFieldException, NoSuchMethodException, InvocationTargetException {
+    public void Test() throws IllegalAccessException, InstantiationException, NoSuchFieldException, NoSuchMethodException, InvocationTargetException {
         // ´´½¨ com.ustc.test.Person Àà
         Class clazz = com.ustc.test.Person.class;             // Class<com.ustc.test.Person> clazz = com.ustc.test.Person.class;
         com.ustc.test.Person p = (com.ustc.test.Person)clazz.newInstance(); // clazz.newInstance();
@@ -146,13 +146,13 @@ Java ´´½¨¶ÔÏóµÄ·½·¨£º
 * Í¨¹ı·´Éä»úÖÆ´´½¨¶ÔÏó
 * Í¨¹ı clone() ·½Ê½´´½¨Ò»¸ö¶ÔÏó
 * Í¨¹ı·´ĞòÁĞ»¯µÄ·½·¨´´½¨¶ÔÏó
-<br/>       
-    
+<br/>
+        
 ### 1.12 package ÓĞÊ²Ã´×÷ÓÃ
 °Ñ .java¡¢.class¡¢resource ÎÄ¼şÓĞÌõÀíµØ½øĞĞÒ»¸ö×éÖ¯£¬ÒÔ¹©Ê¹ÓÃ¡£  
 package ÓïÑÔĞèÒª·ÅÔÚ´úÂë×îÇ°Ãæ£¬ÓÉÒ»×éÀàºÍ½Ó¿Ú×é³É¡£
-<br/>   
-    
+<br/>
+        
 ### 1.13 ÈçºÎÊµÏÖÀàËÆÓÚ C ÓïÑÔÖĞº¯ÊıÖ¸ÕëµÄ¹¦ÄÜ
 Java ÀûÓÃ½Ó¿ÚºÍÀàÊµÏÖº¯ÊıÖ¸ÕëµÄĞ§¹û£¬ÊôÓÚ²ßÂÔÉè¼ÆÄ£Ê½µÄË¼Ïë¡£   
 ```java
@@ -170,7 +170,7 @@ class Cmp2 implements IntCompare{
     public int cmp(int a, int b){return b;}
 }
 
-public class com.ustc.test.Test{
+public class Test{
     public void test(int[] a, IntCompare cmp){  // ÀàËÆº¯ÊıÖ¸Õë
         // do something
     }
