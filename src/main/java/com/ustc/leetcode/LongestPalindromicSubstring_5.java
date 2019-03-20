@@ -7,11 +7,14 @@ import org.junit.Test;
  * @Author Matthew Huang
  * @Date 2019/3/17 21:33
  */
+
 public class LongestPalindromicSubstring_5 {
     @Test
     public void test(){
         String s = "aacdefcaa";
-        System.out.println(longestPalindrome2(s));
+//        System.out.println(longestPalindrome2(s));
+        System.out.println((float)(2)-(float)(1));
+        System.out.println((float)(2-1));
     }
 
     // 2. 中心扩展法
