@@ -31,7 +31,7 @@ public class ZigZagConversion_6 {
          * - 仅StringBuffer是线程安全的
          */
         // 初始化
-        StringBuilder[] sb = new StringBuilder[numRows]; // 最主要的方法是append()和insert()
+        StringBuilder[] sb = new StringBuilder[numRows]; // 最主要的方法是append()和insert(int, String)
         for(int i = 0; i < numRows; ++i){
             sb[i] = new StringBuilder("");
         }
