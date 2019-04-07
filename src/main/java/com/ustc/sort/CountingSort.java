@@ -7,38 +7,47 @@ import java.util.Arrays;
  * @Date 2019/2/23 19:48
  */
 public class CountingSort {
-//    public static void countingSort(int[] array){
-//        // ÏÈÇó³ö×î´ó¡¢×îÐ¡Öµ
-//        int min = array[0], max = array[0];
-//        for (int i = 1; i < array.length; ++i){
-//            min = Math.min(array[i], min);
-//            max = Math.max(array[i], max);
-//        }
-//
-//        // ¹¹½¨Í°
-//        int base = 0 - min;
-//        int[] bucket = new int[max - min + 1];
-//        Arrays.fill(bucket, 0);
-//        for (int i = 0; i < array.length; ++i){
-//            ++bucket[array[i] + base];
-//        }
-//
-//        // Êä³öÍ°ÖÐµÄÊý¾Ýµ½´ýÅÅÐòÊý×é
-//        int i = 0, iBucket = 0;
-//        while (i < array.length){// Èç¹ûÊÇ for ÀàÐÍÔò²»ºÃ±íÊ¾
-//            if (bucket[iBucket] != 0){
-//                array[i] = iBucket - base;
-//                --bucket[iBucket];
-//                ++i;// Ö»ÓÐ²»µÈÓÚÁãÊ±£¬i ²Å¼ÓÒ»
-//            }else {
-//                ++iBucket;
+    public static void countingSort(int[] array){
+        // å…ˆæ±‚å‡ºæœ€å¤§ã€æœ€å°å€¼
+        int min = array[0], max = array[0];
+        for (int i = 1; i < array.length; ++i){
+            min = Math.min(array[i], min);
+            max = Math.max(array[i], max);
+        }
+
+        // æž„å»ºæ¡¶
+        int[] bucket = new int[max - min + 1];
+        Arrays.fill(bucket, 0);
+        for (int i = 0; i < array.length; ++i){
+            ++bucket[array[i] - min];
+        }
+
+        // è¾“å‡ºæ¡¶ä¸­çš„æ•°æ®åˆ°å¾…æŽ’åºæ•°ç»„
+        int i = 0, iBucket = 0;
+        while (i < array.length){// å¦‚æžœæ˜¯ for ç±»åž‹åˆ™ä¸å¥½è¡¨ç¤º
+            if (bucket[iBucket] != 0){
+                array[i] = iBucket + min;
+                --bucket[iBucket];
+                ++i;// åªæœ‰ä¸ç­‰äºŽé›¶æ—¶ï¼Œiæ‰åŠ ä¸€
+            }else {
+                ++iBucket;
+            }
+        }
+//        //å¦ä¸€ç§è¾“å‡ºæ–¹æ³•ï¼šå› ä¸ºæ¡¶ä¸­æ•°å€¼åªæœ‰0ï¼Œ1ï¼Œå…¶ä»–ï¼Œä¸‰ç§ç‰¹æ®Šæƒ…å†µï¼Œå¯ä»¥æžšä¸¾è€ƒè™‘
+//        for (int i = 0, j = 0; i < bucket.length; i++) {
+//            if (bucket[i] == 0)
+//                continue;
+//            if (bucket[i] == 1) {
+//                array[j++] = i + min;
+//                continue;
+//            }
+//            while (bucket[i] >= 0){
+//                array[j++] = i + min;
+//                bucket[i]--;
 //            }
 //        }
-//
-//        for (int a: array) {
-//            System.out.print(a + "  ");
-//        }
-//        System.out.println();
-//    }
+
+        Util.show(array);
+    }
 }
 

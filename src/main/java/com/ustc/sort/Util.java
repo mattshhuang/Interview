@@ -10,4 +10,11 @@ public class Util {
         array[x] = array[y];
         array[y] = temp;
     }
+
+    public static void show(int[] array){
+        for (int a: array) {
+            System.out.print(a + "  ");
+        }
+        System.out.println();
+    }
 }
