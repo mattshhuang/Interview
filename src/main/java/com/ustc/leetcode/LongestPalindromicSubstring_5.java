@@ -17,20 +17,20 @@ public class LongestPalindromicSubstring_5 {
         System.out.println((float)(2-1));
     }
 
-    // 2. ÖÐÐÄÀ©Õ¹·¨
+    // 2. ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¹ï¿½ï¿½
     public String longestPalindrome2(String s) {
-        // ·´×ª×Ö·û´®£ºString sReverse = new StringBuffer(s).reverse().toString();
-        // ×Ö·û´®×ª×Ö·ûÊý×é£ºchar[] ch = s.toCharArray();
+        // ï¿½ï¿½×ªï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½String sReverse = new StringBuffer(s).reverse().toString();
+        // ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½Ö·ï¿½ï¿½ï¿½ï¿½é£ºchar[] ch = s.toCharArray();
         if (s.length() <= 1)
             return s;
 
         String result = "", temp = "";
         int len = s.length();
         for (int i = 0; i < len; ++i){
-            // ÐéÖÐÐÄµã
+            //
             temp = getPalindrome(s, i, i + 1);
             result = result.length() < temp.length() ? temp: result;
-            // ÊµÖÐÐÄµã
+            // Êµï¿½ï¿½ï¿½Äµï¿½
             temp = getPalindrome(s, i, i);
             result = result.length() < temp.length() ? temp: result;
         }
@@ -46,7 +46,7 @@ public class LongestPalindromicSubstring_5 {
         return str.substring(coreLeft + 1, coreRight);
     }
 
-    // 1. ¶¯Ì¬¹æ»®·½·¨
+    // 1. ï¿½ï¿½Ì¬ï¿½æ»®ï¿½ï¿½ï¿½ï¿½
     public String longestPalindrome1(String s) {
         if(s.length() <= 1)
             return s;
@@ -55,7 +55,7 @@ public class LongestPalindromicSubstring_5 {
         boolean[][] dp = new boolean[len][len];
         int siteStart = 0, lenMax = 1;
 
-        // ³õÊ¼»¯
+        // ï¿½ï¿½Ê¼ï¿½ï¿½
         for (int i = 0; i < len; ++i){
             dp[i][i] = true;
             if (i < len - 1 && s.charAt(i) == s.charAt(i+1)) {
@@ -65,7 +65,7 @@ public class LongestPalindromicSubstring_5 {
             }
         }
 
-        // ¿¼ÂÇ³¤¶È´óÓÚµÈÓÚ3µÄÇé¿ö
+        // ï¿½ï¿½ï¿½Ç³ï¿½ï¿½È´ï¿½ï¿½Úµï¿½ï¿½ï¿½3ï¿½ï¿½ï¿½ï¿½ï¿½
         for (int k = 3; k <= len; ++k){
             for (int low = 0; low <= len-k; ++low){
                 int high = low + k - 1;

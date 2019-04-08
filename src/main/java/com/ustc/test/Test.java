@@ -47,7 +47,6 @@ class Person{
 
 public class Test{
     @org.junit.Test
-    // 通过反射机制创建对象
     public void Test() throws IllegalAccessException, InstantiationException, NoSuchFieldException, NoSuchMethodException, InvocationTargetException {
         Class clazz = Person.class;             // Class<com.ustc.test.Person> clazz = com.ustc.test.Person.class;
         Person p = (Person)clazz.newInstance(); // clazz.newInstance();

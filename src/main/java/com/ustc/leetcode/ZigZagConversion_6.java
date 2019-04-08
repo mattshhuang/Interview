@@ -3,14 +3,13 @@ package com.ustc.leetcode;
 import org.junit.Test;
 
 /**
- * ×¢Òâ£ºÕâµÀÌâÓÉÓÚÖ»ÒªÇóÊä³ö£¬¹Ê´æ´¢µÄÊ±ºò²»ÐèÒª´æ´¢¿Õ×Ö·û£¬Á¬×Å´æ´¢¼´¿É£¡
  * @Author Matthew Huang
  * @Date 2019/3/20 19:06
  */
 public class ZigZagConversion_6 {
     @Test
     public void test(){
-        String s = "PAYPALISHIR";   // ÌØÊâ²âÊÔÓÃÀý£º"A" 0; "ABF" 1; "ABF" 6
+        String s = "PAYPALISHIR";   // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½"A" 0; "ABF" 1; "ABF" 6
         int numRows = 2;
         //System.out.println("Result is: " + convert1(s, numRows));
         System.out.println("Result is: " + convert2(s, numRows));
@@ -19,7 +18,7 @@ public class ZigZagConversion_6 {
     // O(n), use StringBuilder
     public String convert2(String s, int numRows) {
         int len = s.length();
-        // ÌØÊâÇé¿ö
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         if (numRows <= 1 || len <= 1 || len <= numRows)
             return s;
 
@@ -27,23 +26,23 @@ public class ZigZagConversion_6 {
          * StringBuilder:
          * - String -> StringBuilder: StringBuilder(String s)
          * - StringBuilder -> String: StringBuilder.toString()
-         * - StringBuilderÄÚ²¿ÊÇÊ¹ÓÃÒ»¸öÊý×éÈ¥´æ´¢Êý¾ÝµÄ(char[]Ö®ºóÎªbyte[])£¬¿É±äµÄ×Ö·ûÐòÁÐ£»String²»¿É¸Ä±ä£¬Ã¿´Î´´½¨ÐÂµÄ¶ÔÏó
-         * - ½öStringBufferÊÇÏß³Ì°²È«µÄ
+         * - StringBuilderï¿½Ú²ï¿½ï¿½ï¿½Ê¹ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¥ï¿½æ´¢ï¿½ï¿½ï¿½Ýµï¿½(char[]Ö®ï¿½ï¿½Îªbyte[])ï¿½ï¿½ï¿½É±ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ð£ï¿½Stringï¿½ï¿½ï¿½É¸Ä±ä£¬Ã¿ï¿½Î´ï¿½ï¿½ï¿½ï¿½ÂµÄ¶ï¿½ï¿½ï¿½
+         * - ï¿½ï¿½StringBufferï¿½ï¿½ï¿½ß³Ì°ï¿½È«ï¿½ï¿½
          */
-        // ³õÊ¼»¯
-        StringBuilder[] sb = new StringBuilder[numRows]; // ×îÖ÷ÒªµÄ·½·¨ÊÇappend()ºÍinsert(int, String)
+        // ï¿½ï¿½Ê¼ï¿½ï¿½
+        StringBuilder[] sb = new StringBuilder[numRows]; // ï¿½ï¿½ï¿½ï¿½Òªï¿½Ä·ï¿½ï¿½ï¿½ï¿½ï¿½append()ï¿½ï¿½insert(int, String)
         for(int i = 0; i < numRows; ++i){
             sb[i] = new StringBuilder("");
         }
 
-        // ²åÈëºÏÊÊµÄÎ»ÖÃ
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Êµï¿½Î»ï¿½ï¿½
         for (int i = 0; i < len; ++i){
             int index = i % (2 * numRows - 2);
             index = index < numRows ? index : 2 * numRows - 2 -index;
             sb[index].append(s.charAt(i));
         }
 
-        // Êä³ö
+        // ï¿½ï¿½ï¿½
         for (int i = 1; i < numRows; ++i){
             sb[0].append((sb[i]));
         }
@@ -53,7 +52,7 @@ public class ZigZagConversion_6 {
     // myself
     public String convert1(String s, int numRows) {
         int len = s.length();
-        // ÌØÊâÇé¿ö
+        // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
         if (numRows <= 1 || len <= 1 || len <= numRows)
             return s;
 
@@ -63,31 +62,31 @@ public class ZigZagConversion_6 {
         } else {
             numColum = (numRows-1) * len/(2*numRows-2) + 1;
         }
-        // ³õÊ¼»¯¶þÎ¬Êý×é
+        // ï¿½ï¿½Ê¼ï¿½ï¿½ï¿½ï¿½Î¬ï¿½ï¿½ï¿½ï¿½
         String[][] result = new String[numRows][numColum];
         String zStr = "";
 
         int row = 0, colum = 0;
         for(int i = 1; i <= len; ++ i){
             if(flag1 != 0 && flag2 == numRows - 2){
-                // Ö´ÐÐÃ¿ÁÐnumRows¸ö
+                // Ö´ï¿½ï¿½Ã¿ï¿½ï¿½numRowsï¿½ï¿½
                 result[numRows - flag1][colum] = String.valueOf(s.charAt(i - 1));
                 --flag1;
                 if (flag1 == 0)
                     ++colum;
             }else if (flag1 == 0 && flag2 != 0){
-                // Ö´ÐÐÃ¿ÁÐ1¸ö
+                // Ö´ï¿½ï¿½Ã¿ï¿½ï¿½1ï¿½ï¿½
                 result[flag2][colum++] = String.valueOf(s.charAt(i - 1));
                 --flag2;
             }else if (flag1 == 0 && flag2 == 0){
-                // Íê³ÉÒ»¸öµ¥Ôª
+                // ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½Ôª
                 flag1 = numRows;
                 flag2 = numRows - 2;
                 --i;
             }
         }
 
-        // Êä³ö
+        // ï¿½ï¿½ï¿½
         for (int i = 0; i < numRows; ++i){
             for (int j = 0; j < numColum; ++j){
                 if (result[i][j] != null) {

@@ -3,7 +3,7 @@ package com.ustc.sort;
 import java.util.Arrays;
 
 /**
- * 二路归并排序
+ * 褰掑苟鎺掑簭
  * @Author Matthew Huang
  * @Date 2019/2/23 13:00
  */
@@ -16,11 +16,11 @@ public class MergeSort {
         if (array.length < 2){
             return array;
         }
-        //划分为二路
+
         int mid = array.length / 2;
         int[] left = Arrays.copyOfRange(array, 0, mid);
         int[] right = Arrays.copyOfRange(array, mid, array.length);
-        //二路合并为一路
+
         return mergeOp(mergeMain(left), mergeMain(right));
     }
 

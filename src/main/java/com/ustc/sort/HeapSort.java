@@ -1,7 +1,7 @@
 package com.ustc.sort;
 
 /**
- * ¶ÑÅÅĞò
+ * å †æ’åº
  * @Author Matthew Huang
  * @Date 2019/2/22 14:44
  */
@@ -26,17 +26,16 @@ public class HeapSort {
 
     private static void adjustHeapMax(int[] array, int i){
         int max = i;
-        // Èç¹û´æÔÚ×ó×ÓÊ÷£¬ÇÒ×ó×ÓÊ÷´óÓÚ¸¸½Úµã£¬Ôò½»»»
         if (2*(i+1)-1 < Test.len && array[2*(i+1)-1] > array[max]){
             max = 2*(i+1)-1;
         }
-        // Èç¹û´æÔÚÓÒ×ÓÊ÷£¬ÇÒÓÒ×ÓÊ÷´óÓÚ¸¸½Úµã£¬Ôò½»»»
+
         if (2*(i+1) < Test.len && array[2*(i+1)] > array[max]){
             max = 2*(i+1);
         }
         if (max != i){
             Util.swapInt(array, max, i);
-            adjustHeapMax(array, max);// ²»ÄÜÍü¼Ç£¡
+            adjustHeapMax(array, max);// ä»è¦è°ƒæ•´
         }
     }
 }

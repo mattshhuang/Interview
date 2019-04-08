@@ -1,7 +1,7 @@
 package com.ustc.sort;
 
 /**
- * ¿ìËÙÅÅĞò
+ * å¿«é€Ÿæ’åº
  * @Author Matthew Huang
  * @Date 2019/2/23 13:01
  */
@@ -12,7 +12,7 @@ public class QuickSort {
     }
 
     /**
-     * Ëã·¨Ö÷ÒªÂß¼­²¿·Ö
+     * ï¿½ã·¨ï¿½ï¿½Òªï¿½ß¼ï¿½ï¿½ï¿½ï¿½ï¿½
      * @param array
      * @param start
      * @param end
@@ -41,7 +41,7 @@ public class QuickSort {
      * @return
      */
     private static int patition(int[] array, int start, int end){
-        int smallIndex = start - 1; //×¢ÒâÕâÀïµÄ¿ªÊ¼ºÍ½áÊøÒÔstartºÍendÎª±ê×¼
+        int smallIndex = start - 1; //×¢ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿ï¿½Ê¼ï¿½Í½ï¿½ï¿½ï¿½ï¿½ï¿½startï¿½ï¿½endÎªï¿½ï¿½×¼
         int pivot = (int)(start + Math.random() * (end - start + 1));
         Util.swapInt(array, pivot, end);
         for (int i = start; i <= end; ++i){

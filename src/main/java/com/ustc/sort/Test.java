@@ -1,7 +1,7 @@
 package com.ustc.sort;
 
 public class Test{
-    // 设置的全局变量，待排序数组一旦修改，长度也需修改
+
     static int len = 11;
 
     public static void main(String[] args) {
