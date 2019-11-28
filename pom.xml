@@ -27,6 +27,13 @@
             <artifactId>lombok</artifactId>
             <version>${lombox.version}</version>
         </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
