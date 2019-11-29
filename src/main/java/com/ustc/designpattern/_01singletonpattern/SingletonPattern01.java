@@ -5,7 +5,8 @@ package com.ustc.designpattern._01singletonpattern;
  * 优点：天然线程安全，调用效率高。
  * 缺点：资源效率低。
  */
-public class SingletonPattern01 {
+public class SingletonPattern01
+{
     // 类初始化时就加载这个对象，私有且不可更改，保证类对象唯一
     private static final SingletonPattern01 instance = new SingletonPattern01();
 

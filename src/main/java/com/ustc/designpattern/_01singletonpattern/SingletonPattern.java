@@ -11,16 +11,21 @@ package com.ustc.designpattern._01singletonpattern;
  * 实现方式：饿汉式、懒汉式、双重检测锁式、静态内部类式、枚举单例。
  *
  */
-public class SingletonPattern {
+public class SingletonPattern
+{
     public static void main(String[] args) {
         // 饿汉式：线程安全，调用效率高，不能延迟加载
         SingletonPattern01 sp1 = SingletonPattern01.getInstance();
+
         // 懒汉式：线程安全，调用效率低，能延迟加载
         SingletonPattern02 sp2 = SingletonPattern02.getInstance();
+
         // 双重检测锁式：不建议使用
         SingletonPattern03 sp3 = SingletonPattern03.getInstance();
+
         // 静态内部类式：线程安全，调用效率高，能延迟加载
         SingletonPattern04 sp4 = SingletonPattern04.getInstance();
+
         // 枚举式：线程安全，调用效率高，不能延迟加载，天然防止反射和反序列化漏洞
         SingletonPattern05 sp5 = SingletonPattern05.INSTANCE;
 
